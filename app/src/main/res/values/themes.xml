@@ -1,0 +1,23 @@
+<resources >
+  <style name="Theme.MyAudio" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/orangeCD7004</item>
+    <item name="colorAccent">@color/teal_200</item>
+    <item name="android:textAppearance">@style/textAppearanceDefault</item>
+    <item name="fontFamily">@font/app_font</item>
+  </style>
+
+  <style name="Theme.MainActivity" parent="Theme.MyAudio">
+    <item name="android:background">@drawable/bg_app</item>
+  </style>
+
+  <style name="textAppearanceDefault">
+    <item name="android:textSize">@dimen/dp14</item>
+    <item name="android:textColor">@color/gray8a8a8a</item>
+  </style>
+
+  <style name="textAppearanceSuperLarge23" parent="@android:style/TextAppearance.Large">
+    <item name="android:textSize">@dimen/dp23_3</item>
+    <item name="android:textColor">@color/gray8a8a8a</item>
+  </style>
+</resources>

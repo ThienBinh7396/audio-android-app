@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:bind="http://schemas.android.com/tools">
+
+  <data>
+    <variable
+      name="splashViewModel"
+      type="com.thienbinh.myaudio.ui.splash.SplashViewModel" />
+  </data>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/viewPager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      bind:splashSlideAdapter="@{splashViewModel.images}"/>
+
+    <ProgressBar
+      android:layout_width="@dimen/dp24_3"
+      android:layout_height="@dimen/dp24_3"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:indeterminateTint="@color/whiteFFFFFF"
+      android:layout_marginBottom="@dimen/dp12"
+      android:layout_marginEnd="@dimen/dp12"/>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
