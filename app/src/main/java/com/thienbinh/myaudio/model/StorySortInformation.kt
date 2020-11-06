@@ -1,4 +1,4 @@
-package com.thienbinh.myaudio.model.api
+package com.thienbinh.myaudio.model
 
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable

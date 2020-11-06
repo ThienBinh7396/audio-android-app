@@ -3,9 +3,8 @@ package com.thienbinh.myaudio.model
 import java.io.Serializable
 
 data class ChapterSorterInformation(
-  val chapterId: String? = null,
-  val type: String,
-  val href: String? = null,
+  val idStory: Int,
+  val href: String,
   val title: String
 ): Serializable
 
