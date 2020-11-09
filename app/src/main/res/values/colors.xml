@@ -7,6 +7,7 @@
   <color name="teal_700">#FF018786</color>
   <color name="black">#FF000000</color>
   <color name="white">#FFFFFFFF</color>
+  <color name="colorDefault">@color/gray8a8a8a</color>
 
   <color name="colorPrimary">@color/orangeF78501</color>
 
@@ -14,8 +15,11 @@
 
   <color name="gray8a8a8a">#8a8a8a</color>
 
+  <color name="black0b0e12cc">#0b0e12cc</color>
   <color name="black4b4c54">#4b4c54</color>
   <color name="black343341">#343341</color>
+
+  <color name="blue466ccc">#466ccc</color>
 
   <color name="orangeF78501">#f78501</color>
   <color name="orangeCD7004">#CD7004</color>

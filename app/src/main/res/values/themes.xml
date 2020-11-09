@@ -20,4 +20,8 @@
     <item name="android:textSize">@dimen/dp23_3</item>
     <item name="android:textColor">@color/gray8a8a8a</item>
   </style>
+
+  <style name="blockWithoutGradient">
+    <item name="android:background">@color/black0b0e12cc</item>
+  </style>
 </resources>

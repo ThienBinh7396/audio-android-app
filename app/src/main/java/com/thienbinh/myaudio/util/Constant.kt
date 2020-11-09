@@ -19,3 +19,11 @@ enum class DelayTime(val value: Long) {
   DELAY_4000MS(4000L),
   DELAY_5000MS(5000L),
 }
+
+enum class TAG(val value: String) {
+  API("FETCH_RESULT")
+}
+
+enum class ApiRepresent(val value: String) {
+  HOME_API("HOME_API")
+}

@@ -26,7 +26,7 @@ class SplashActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
 
     viewBinding =
-      DataBindingUtil.setContentView<ActivitySplashBinding>(this, R.layout.activity_splash).apply {
+      ActivitySplashBinding.inflate(layoutInflater).apply {
         splashViewModel = SplashViewModel()
         lifecycleOwner = this@SplashActivity
 
@@ -34,6 +34,8 @@ class SplashActivity : AppCompatActivity() {
 
         gotoMainActivity()
       }
+
+    setContentView(viewBinding.root)
   }
 
   private fun gotoMainActivity() {

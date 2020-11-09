@@ -4,7 +4,7 @@ class APIUtils {
   companion object{
     private const val BASE_URL = "https://my-audio1.herokuapp.com//api/"
 
-    fun getApiService() =
+    fun getApiService(): IApiService =
       APIClient.getClient(BASE_URL).create(IApiService::class.java)
   }
 }

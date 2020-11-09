@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/content"
+    style="@style/blockWithoutGradient"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/dp14"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+    <TextView
+      android:id="@+id/tvFeature"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/features"
+      android:textAlignment="center"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintWidth_percent="0.2"
+      app:layout_constraintRight_toLeftOf="@id/tvPages"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_baseline_layers"
+      app:layout_constraintBottom_toTopOf="@id/tvFeature"
+      app:layout_constraintEnd_toEndOf="@id/tvFeature"
+      app:layout_constraintStart_toStartOf="@id/tvFeature"
+      app:tint="@color/colorDefault" />
+
+    <TextView
+      android:id="@+id/tvPages"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/pages"
+      android:textAlignment="center"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintWidth_percent="0.2"
+      app:layout_constraintLeft_toRightOf="@id/tvFeature"
+      app:layout_constraintRight_toLeftOf="@id/tvHome" />
+
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_baseline_person_pin_circle"
+      app:layout_constraintBottom_toTopOf="@id/tvPages"
+      app:layout_constraintEnd_toEndOf="@id/tvPages"
+      app:layout_constraintStart_toStartOf="@id/tvPages"
+      app:tint="@color/colorDefault" />
+
+    <TextView
+      android:id="@+id/tvHome"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/welcome"
+      android:textAlignment="center"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintWidth_percent="0.2"
+      app:layout_constraintLeft_toRightOf="@id/tvPages"
+      app:layout_constraintRight_toLeftOf="@id/tvProjects" />
+
+    <TextView
+      android:id="@+id/tvProjects"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/projects"
+      android:textAlignment="center"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintWidth_percent="0.2"
+      app:layout_constraintLeft_toRightOf="@id/tvHome"
+      app:layout_constraintRight_toLeftOf="@id/tvMenu" />
+
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_baseline_image"
+      app:layout_constraintBottom_toTopOf="@id/tvProjects"
+      app:layout_constraintEnd_toEndOf="@id/tvProjects"
+      app:layout_constraintStart_toStartOf="@id/tvProjects"
+      app:tint="@color/colorDefault" />
+
+    <TextView
+      android:id="@+id/tvMenu"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="@string/menu"
+      android:textAlignment="center"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintLeft_toRightOf="@id/tvProjects"
+      app:layout_constraintWidth_percent="0.2"/>
+
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_baseline_layers"
+      app:layout_constraintBottom_toTopOf="@id/tvMenu"
+      app:layout_constraintEnd_toEndOf="@id/tvMenu"
+      app:layout_constraintStart_toStartOf="@id/tvMenu"
+      app:tint="@color/colorDefault" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round"
+    android:backgroundTint="@color/blue466ccc"
+    android:padding="@dimen/dp16"
+    android:src="@drawable/ic_baseline_home_work"
+    app:layout_constraintTop_toTopOf="@id/content"
+    app:layout_constraintBottom_toTopOf="@+id/content"
+    app:layout_constraintEnd_toEndOf="@+id/content"
+    app:layout_constraintStart_toStartOf="@+id/content"
+    app:tint="@color/whiteFFFFFF" />
+</androidx.constraintlayout.widget.ConstraintLayout>

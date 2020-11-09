@@ -32,6 +32,9 @@ data class StoryFullInformation(
   val time: String? = null
 ): Serializable
 
+fun StoryFullInformation.isTheSameContent(other: StoryFullInformation) =
+  this.id == other.id && this.name == other.name
+
 data class StoryFullInformationResponse(
   val data: StoryFullInformation,
   val message: String,
